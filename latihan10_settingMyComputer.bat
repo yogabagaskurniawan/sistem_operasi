@@ -1,59 +1,76 @@
-echo off
-title setting my computer
+@echo off
+title Setting My Computer
 :setting
-color 9 
+color b5
 cls
-echo =================================
-echo        setting komputerku
-echo =================================
-echo        1. setting keyboard
-echo        2. setting bahasa
-echo        3. setting Date
-echo        4. Add User
-echo        5. Sound Control
-echo        6. OPen Startup
-echo        7. Chrome
-echo        8. kembali       
-echo        0. keluar
-echo ==================================
+echo [===================================================]
+echo                SETTING COMPUTER
+echo [===================================================]
+echo  [1] Setting Keyboard
+echo  [2] Setting Language
+echo  [3] Setting Date
+echo  [4] Add User
+echo  [5] Sound Control
+echo  [6] Open Startup
+echo  [7] Chrome
+echo  [88] Kembali     [0] Keluar
+echo [===================================================]
 echo.
-set /p "pilihmenu=Masukkan pilihan menu:"
-if %pilihmenu%==1 goto keyboard
-if %pilihmenu%==2 goto Language
-if %pilihmenu%==3 goto Date
-if %pilihmenu%==4 goto User
-if %pilihmenu%==5 goto sound
-if %pilihmenu%==6 goto startup
-if %pilihmenu%==7 goto chrome 
-if %pilihmenu%==8 goto back
-if %pilihmenu%==0 goto exit
+set /p "pilihanmenu=Masukan Pilihan Kamu : "
+if %pilihanmenu%==1 goto Keyboard
+if %pilihanmenu%==2 goto Language
+if %pilihanmenu%==3 goto Date
+if %pilihanmenu%==4 goto User
+if %pilihanmenu%==5 goto Sound
+if %pilihanmenu%==6 goto Startup
+if %pilihanmenu%==7 goto Chrome
+if %pilihanmenu%==88 goto Back
+if %pilihanmenu%==0 goto Exit
 
-@REM :keyboard
-@REM cls
-@REM start 
+:Keyboard
+cls
+start control keyboard
+goto setting
+pause
+
+:Language
+cls
+start intl.cpl
+goto setting
+pause
 
 :Date
 cls
 start timedate.cpl
 goto setting
+pause
 
 :User
 cls
-start Netp1wiz.exe
+start Netplwiz.exe
+goto setting
 pause
 
-:sound 
+:Sound
 cls
 start SndVol.exe
 goto setting
 pause
 
-:chrome
+:Startup
+cls
+start msconfig
+goto setting
+pause
+
+:Chrome
+cls
 "C:\Program Files\Google\Chrome\Application\chrome.exe"
 goto setting
+pause
 
-:back
+:Back
 goto setting
 
-:exit
+:Exit
 exit
