@@ -1,0 +1,15 @@
+No |SKS | NILAI |GRADE |BOBOT |HASIL |Nama Matkul  
+------------------------------------- 
+1 || 4   ||788     ||A        ||4.00        ||16        ||Manajemen Basis Data  
+2 || 2   ||66     ||BC        ||2.50        ||4        ||Manajemen Jaringan  
+3 || 4   ||77     ||AB        ||3.50        ||12        ||RPL  
+4 || 2   ||88     ||A        ||4.00        ||8        ||Kewirausahaan  
+5 || 2   ||55     ||D        ||1.00        ||2        ||Etika Profesi  
+6 || 4   ||66     ||BC        ||2.50        ||8        ||Probabilitas dan Statistika  
+7 || 4   ||77     ||AB        ||3.50        ||12        ||Pemrograman Objek  
+8 || 2   ||88     ||A        ||4.00        ||8        ||Sistem Operasi  
+   
+Total Nilai       = 1305   
+Total Bobot Hasil = 70   
+Total SKS         = 24   
+IP Semester       = 2  
